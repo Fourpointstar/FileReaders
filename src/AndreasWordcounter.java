@@ -10,6 +10,7 @@ public class AndreasWordcounter {
         File tedsFile=new File("fixedFile.txt");
         FileReader words=new FileReader(tedsFile);
         char[] bytes=new char[(int)tedsFile.length()];
+        words.read(bytes);
         String together=new String(bytes);
         String[] wordArray=together.split(" ");
         /*for (String element: wordArray) {
