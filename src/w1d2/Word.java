@@ -130,7 +130,7 @@ public class Word {
         temp2+=comparedcharacter;
 
         temp2=temp2.toUpperCase();
-        System.out.println(temp2);
+        //System.out.println(temp2);
         for(int i=0; i<charArray.length; i++){
             temp="";
             temp+=this.charArray[i];
@@ -147,6 +147,20 @@ public class Word {
         }
         return count;
 
+    }
+
+    public char delete(int spot){
+        char[] charA=new char[length-1];
+        char letter=' ';
+        for(int i=0, r=0; i<length; i++) {
+            if (i == spot) {
+                letter=charArray[i];
+                continue;
+            }
+            charA[r++] = charArray[i];
+        }
+        System.out.println(charA);
+        return letter;
     }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

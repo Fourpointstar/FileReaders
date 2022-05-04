@@ -46,12 +46,12 @@ public class wordDriver {
                 bufferCharacterCount+=1;
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
             }
-            for (int i=0; i<numberOfWords; i++){
-                if(!(wordArray[i].contains('e'))){
-                    System.out.println(wordArray[i]);
-                }
+            //for (int i=0; i<numberOfWords; i++){
+               // if(!(wordArray[i].contains('e'))){
+                //    System.out.println(wordArray[i]);
+               // }
 
-            }
+           // }
 
 
 
@@ -60,8 +60,10 @@ public class wordDriver {
             Word stories=new Word(charstory);
             System.out.println(charstory);
             char pick='u';
+            int pick2=11;
+            System.out.println("\nRemoved the letter \""+stories.delete(pick2)+"\" from element number "+pick2+" in the char array");
+            System.out.println("\nThe letter "+pick+" is in the original text "+stories.numOfOccurances(pick)+" times!");
 
-            System.out.println("The letter "+pick+" is in the text "+stories.numOfOccurances(pick)+" times!");
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
         } catch (FileNotFoundException e) {
