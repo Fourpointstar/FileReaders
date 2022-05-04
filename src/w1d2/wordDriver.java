@@ -58,8 +58,10 @@ public class wordDriver {
 
 //--------------------------------------------------------------------------------------------
             Word stories=new Word(charstory);
+            System.out.println(charstory);
+            char pick='u';
 
-            System.out.println("The letter E is in the text "+stories.instances('e')+" times!");
+            System.out.println("The letter "+pick+" is in the text "+stories.numOfOccurances(pick)+" times!");
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
         } catch (FileNotFoundException e) {

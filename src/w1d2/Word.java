@@ -123,11 +123,26 @@ public class Word {
 
 
 
-    public int instances(char comparedcharacter){
+    public int numOfOccurances(char comparedcharacter){
         int count=0;
+        String temp;
+        String temp2="";
+        temp2+=comparedcharacter;
+
+        temp2=temp2.toUpperCase();
+        System.out.println(temp2);
         for(int i=0; i<charArray.length; i++){
-            if (this.charArray[i]==comparedcharacter){
+            temp="";
+            temp+=this.charArray[i];
+            //System.out.print(temp);
+
+            temp=temp.toUpperCase();
+            //System.out.print(temp);
+
+
+            if (temp.equals(temp2)){
                 count=count+1;
+
             }
         }
         return count;
